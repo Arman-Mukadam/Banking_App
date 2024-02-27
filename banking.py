@@ -46,8 +46,7 @@ class Bank:
         # assuming the deposit method exists for the account object.
         # For this example, let's assume the deposit method exists.
 
-        
-
+    
     def withdraw(self,account_id,amount):
         account=self.get_account(account_id)
         if account:
