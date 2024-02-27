@@ -29,7 +29,7 @@ def run_single_test(name):
 
         elif name=='insuff_fund':
             bank.create_account("account4")
-            print(f'ye hai hamari bank:{bank}')
+            print(f'This is our bank:{bank}')
             amount_deposit=input("enter an amount to deposit")
             bank.deposit("account4",amount_deposit)
             try:
@@ -39,7 +39,7 @@ def run_single_test(name):
                 print(type(bank.withdraw))
           
                 if amount_deposit<amount_withdrawl:
-                    raise ValueError("aisa to nahi ho skta")
+                    raise ValueError("Cant make a withdrawal, insufficient balance")
             except ValueError as e:
                 print(e)
         
